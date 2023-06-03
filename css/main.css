@@ -1,0 +1,54 @@
+@import "colors.css";
+@import "images.css";
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+main{
+    margin-bottom: 30px;
+}
+
+.flex-container{
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+}
+.flex-container > h2{
+    text-align: center;
+    background-color: var(--color0);
+    color: var(--color1);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container-produtos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container-produtos > .container-md{
+    position: relative;
+    margin: 15px auto;
+}
+.section-contato .row{
+    width: 100%;
+}
+.section-contato .col-sm-6{
+    margin: 10px auto;
+}
+
+@media only screen and (min-width: 768px){
+    .flex-container > h2{
+        width: 70%;
+    }
+    .container-produtos{
+        grid-template-columns: 50% 50%;
+    }
+}
